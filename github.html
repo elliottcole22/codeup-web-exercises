@@ -4,47 +4,166 @@
     <meta charset="UTF-8">
     <title>Github exercise</title>
 </head>
+<style>
+    <body{margin:0px;
+    }
+    #WebsiteHeader{
+        padding:10px;
+        background-color:#222;
+
+    {
+        color:#eee
+    }
+
+    #WebsiteHeader nav{
+        display:inline-block;
+    }
+    #Websiteheader nav img{
+        vertical-align:middle;
+    }
+    #Websiteheader nav a{
+        color:#aaa;
+        text-decoration:none;
+        margin-left:6px;
+        margin-right:6px;
+        display:inline-block;
+        vertical-align:middle;
+    }
+    #ProjectHeader{
+        display:inline-block;
+        background-color:#eee;
+        border-bottom:1px solid #999;
+        padding:4px 4px 0 4px;
+        width: 100%;
+    }
+    #ProjectHeader img,#ProjectHeader h2{
+        display:inline-block;
+        vertical-align:middle;
+    }
+    #ProjectNav nav a{
+        text-decoration:none;
+        color:black;
+        padding-left:10px;
+        margin:0px;
+    }
+    #TableHeader th{
+        background-color:#ccc;
+        text-align:left;
+        padding:10px;
+    }
+    .TeamMemberRow{
+        height:80px;
+    }
+    .UserType{
+        width:100px;
+    }
+    .UserLogoColumn{
+        width:10%;
+    }
+    .DisplayName{
+        text-decoration:none;
+        color:#6666ff;
+    }
+    .UserNames{
+        color:#444;
+    }
+    #TeamTable, #TeamTable tr{
+        border:1px solid #aaa;
+        border-collapse: collapse;
+        width:100%;
+    }
+    #TeamTable img{
+      float:right;
+    }
+    #TeamTableContainer{
+        padding:10px;
+    }
+    #LeftFooterNav{
+        padding:10px;
+        position:relative;
+        float:left;
+    }
+    #RightFooterNav{
+        padding:10px;
+        position:relative;
+        float:right;
+    }
+    footer{
+        margin:10px;
+        position:absolute;
+        bottom:0;
+        width:100%;
+    }
+    footer nav> {
+        padding: 0 10px 0 0;
+    }
+</style>
 <body>
-<header>Github team layout</header>
-
-<nav>
-    <ul>
-        <li><img src="placeholder1.svg"</li>
-        <li>pull requests</li>
-        <li>issues</li>
-        <li>marketplace</li>
-        <li>explore</li>
-    </ul>
-</nav>
-<p><img src="codeup-logo.png"</p>
-
-<main>
-
-    <table>
-        <tr>
-            <th>Codeup's Dev Team
-            </th>
-        </tr>
-        <tr>
-            <td><img src="placeholder1.svg"</td>
-            <td>Kent Beck<br>KentBeck</td>
-        </tr>
-        <tr>
-            <td><img src="placeholder1.svg">
-            <td>Codeup Instruction Staff<br>CodeupInstructors</td>
-        </tr>
-        <tr>
-            <td><img src="placeholder1.svg"></td>
-            <td>Martin Fowler</td>
-        </tr>
-    </table>
-
-
-</main>
+    <header id="WebsiteHeader">
+        <nav>
+            <img src="placeholder1.svg" alt="Github logo">
+            <a href="#">Pull Requests</a>
+            <a href="#">Issues</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Explore</a>
+        </nav>
+    </header>
+    <main>
+        <div id="ProjectHeader">
+            <img src="placeholder1.svg" alt="Logo 1"/>
+            <h2>Codeup</h2>
+            <div id="ProjectNav">
+                <nav>
+                    <a href="#">Repositories</a>
+                    <a href="#">People</a>
+                    <a href="#">Teams</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Setting</a>
+                </nav>
+            </div>
+        </div>
+        <br>
+        <div id="TeamTableContainer">
+            <table id="TeamTable">
+                <tr id="TableHeader">
+                    <th colspan=4">Codeup's dev team</th>
+                </tr>
+                <tr class="TeamMemberRow">
+                    <td class="UserLogoColumn"><img src="placeholder2.svg"</td>
+                    <td class="UserNames"><a href="#" class="DisplayName">Kent Beck</a><br><span class="Username">KentBeck</span></td>
+                    <td class="UserType">Member</td>
+                    <td class="TeamCount">1 team</td>
+                </tr>
+                <tr class="TeamMemberRow">
+                    <td class="UserLogoColumn"><img src="placeholder2.svg"</td>
+                    <td class="Usernames"><a href="#" class="DisplayName">Codeup Instruction Staff</a><br><span class="Username">CodeUpInstructors</span></td>
+                    <td class="UserType">Member</td>
+                    <td class="TeamCount">0 teams</td>
+                </tr>
+            </table>
+        </div>
+    </main>
 
 <footer>
-
-</footer>
-
+    <hr>
+    <br>
+    <br>
+        <nav id="LeftFooterNav">
+            <span>&copy; 2018 Github, Inc.</span>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Status</a>
+            <a href="#">Help</a>
+        </nav>
+        <nav id="RightFooterNav">
+            <a href="#">Contact Github</a>
+            <a href="#">API</a>
+            <a href="#">Training</a>
+            <a href="#">Shop</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+        </nav>
+    </footer>
 </body>
 </html>

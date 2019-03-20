@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <form method=POST" action="https://request-inspector.glitch.me/">
+
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="type username"><br>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="type password"><br>
+
+        <button type="submit">SUBMIT</button><br>
+        <textarea rows="20" cols="50" name="bio" placeholder="Biographical Info Here"></textarea>
+        <br>
+        <h2>How Did You Hear About Us (radio)?</h2>
+
+        <input type="radio" name="hear_about" value="billboard">billboard<br>
+        <input type="radio" name="hear_about" value="internet advertisement">internet<br>
+        <input type="radio" name="hear_about" value="other">other<br>
+<br>
+        <h2>How Did You Hear About Us? (checkbox)</h2>
+        <label for="billboard">Billboard</label>
+        <input type="checkbox" name="about_hear" value="billboard" id="billboard">
+        <label for="internet">Internet</label>
+        <input type="checkbox" name="about_hear" value="internet" id="internet">
+        <label for="other">Other</label>
+        <input type="checkbox" name="about_hear" value="other" id="other">
+    </form>
+
+</body>
+</html>
