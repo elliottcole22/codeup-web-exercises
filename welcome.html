@@ -6,14 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<style>
-    .fancy-header {
-        color:blue
-    }
-
-
-</style>
-    <h1 id="top" class="fancy-header" style="color:#ff0000;"><strong>Welcome to Veridian Dynamics!</strong></h1>
+    <h1 id="top" class="fancy-header"<strong>Welcome to Veridian Dynamics!</strong></h1>
     <h2>At Veridian Dynamics <strong>we</strong> solve <em>your</em> problems with <em><strong>technology</strong></em></h2>
         <hr />
     <h2>Core Values</h2>
@@ -23,7 +16,7 @@
             <li>Technology</li>
         </ul>
 
-    <h2>Our Values</h2>
+    <h2 id="val">Our Values</h2>
         <ol>
             <li>Plan</li>
             <li>Evaluate</li>
@@ -37,11 +30,12 @@
             <li>Increase business by 30%</li>
         </ul>
             <hr />
-    <h2>Company Vision</h2>
+    <h2 id="blah">Company Vision</h2>
         <img src="beech.jpeg">
     <h2>Our Product</h2>
+        <img src="codeup-logo.png" alt="Codeup Logo">
 
-    <table>
+    <table id="booger">
         <tr>
             <th>Plan</th>
             <th>Price</th>
@@ -53,10 +47,12 @@
         <td>Base Technology</td>
 
     </tr>
+    <tr>
         <td>Advanced</td>
         <td>$199</td>
         <td>Additional Features</td>
-    </tr>
+    </tr>`
+
     <tr>
         <td>Premium</td>
         <td>$499</td>
@@ -66,5 +62,27 @@
     </table>
         <p><em>All products come with our quality guarantee<sup>tm</sup></em></p>
         <a href="#top">Go to top of page</a>
+    <h4>Select Your Plan</h4>
+        <form method="POST" action="https://www.something.com">
+        <label for="Starter">Starter</label>
+        <input type="radio" name="Starter" value="Starter" id="Starter"/>
+        <label for="Advanced">Advanced</label>
+        <input type="radio" name="Advanced" value="Advanced" id="Advanced"/>
+        <label for="Premium">Premium</label>
+        <input type="radio" name="Premium" value="Premium" id="Premium" checked/>
+</form>
+<form method="POST" action="https://whatever.com">
+    <p>What is your preferred method of communication?</p>
+    <select name="communication" size="4" multiple="multiple">
+        <option value="call" selected="selected">call</option>
+        <option value="text">text</option>
+        <option value="email">email</option>
+        <option value="carrier pigeon">carrier pigeon</option>
+    </select>
+</form>
+
+
+
+
 </body>
 </html>
