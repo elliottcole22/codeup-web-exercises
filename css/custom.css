@@ -1,0 +1,33 @@
+#jumbo {
+    max-width: 100%;
+    min-width: 400px;
+    padding: 2em;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    #jumbo {display: none;}
+}
+
+
+.choose {
+    background-color: blue;
+    color: white;
+    padding: 0.5em;
+    border: black 2px solid;
+
+
+}
+
+li {
+    display: inline;
+}
+
+.welcome-to-pizzaworld {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    background-color: lightgrey;
+}

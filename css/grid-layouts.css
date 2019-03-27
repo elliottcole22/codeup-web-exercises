@@ -1,0 +1,40 @@
+body {
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+}
+.row:after;
+
+.column {
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+
+.one-half {
+    width: 50%;
+}
+
+.one-third {
+    width: 33.33%;
+}
+
+.one-fourth {
+    width: 25%
+}
+
+.one-sixth {
+    width: 16.66%
+}
+
+.one-eight {
+    width: 12.5%
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
