@@ -1,0 +1,15 @@
+#box1 {
+
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin: 20px;
+    padding: 3em;
+    color: white;
+    text-align: center;
+    float: right;
+    border: solid black 10px;
+    border-radius: 50%;
+}
+
+}
